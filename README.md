@@ -27,7 +27,7 @@ journalctl -u mysql.service -f
 + [Bots](https://qna.habr.com/q/736377)
 + [Репозиторий с готовым ботом](https://github.com/adilkhash/planetpython_telegrambot)
 Для сборки и пуша образа на локалке рекомендуется использовать команду:
-
+-----
 ```bash
 docker build -t sixhands/<название проекта> .
 docker push sixhands/<название проекта>
