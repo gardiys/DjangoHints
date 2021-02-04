@@ -2,5 +2,5 @@
 + Зайти внутрь контейнера
 
 ```
-sudo docker exec -ti <container_name> sh
+sudo docker exec -ti <container_id> sh
 ```
