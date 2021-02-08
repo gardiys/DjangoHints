@@ -48,6 +48,10 @@ image: sixhands/<название проекта>
 ```
 pg_ctl -D /usr/local/var/postgres start
 ```
++ Перезапустить сервер macOs
+```
+brew services restart postgres
+```
 Адрес management tools http://127.0.0.1:51774/browser/
 
 ## Сообщения и чатики
