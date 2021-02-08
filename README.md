@@ -112,6 +112,10 @@ CORS_ALLOW_CREDENTIALS = True
 ```python
 python manage.py migrate
 ```
+Запустить скрипт в shell
+```python
+./manage.py shell < myscript.py
+```
 > Можно сюда добавить картиночки
 # Ссылки по Django
 + [Djoser](https://djoser.readthedocs.io/en/latest/introduction.html)
