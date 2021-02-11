@@ -10,7 +10,7 @@
   
 2. [Django]
  + [Чаты](./django/chats.md)
- + [SortMePlease] (./django/hints.md)
+ + [SortMePlease](./django/hints.md)
 
 3. [Databases]
  + [PostgreSQL](./database/postgresql.md)
