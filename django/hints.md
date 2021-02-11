@@ -128,3 +128,5 @@ ThroughModel.objects.bulk_create([
     ThroughModel(users_id=users[1].pk, sample_id=sample_object.pk)
 ])
 ```
+
+[Полезные советы по работе с БД](https://webdevblog.ru/9-django-sovetov-dlya-raboty-s-bazami-dannyh/)
