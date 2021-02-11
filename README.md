@@ -9,6 +9,7 @@
   + [Gunicorn]
   
 2. [Django]
+    + [Чаты](chats.md)
 3. [Django REST Framework]
 # Полезные ссылки для работы
 ## Сигналы
