@@ -1,5 +1,5 @@
 # Чаты на Django
-+ [Оглавление](README.md)
++ [Оглавление](../README.md)
 ## Модели
 ```python
 class TrackableDateModel(models.Model):
