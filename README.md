@@ -134,3 +134,22 @@ python manage.py migrate
 # Email
 + [Гугл](https://www.hostinger.ru/rukovodstva/kak-ispolzovat-smtp-server)
 + [Яндекс](https://netpoint-dc.com/blog/nastroika-pochti-dlya-raboti-cherez-smtp-yandex/)
+
+# Bulk M2M
+```python
+Users().save()
+Users().save()
+
+# Access the through model directly
+ThroughModel = Sample.users.through
+
+users = Users.objects.filter(pk__in=[1,2])
+
+sample_object = Sample()
+sample_object.save()
+
+ThroughModel.objects.bulk_create([
+    ThroughModel(users_id=users[0].pk, sample_id=sample_object.pk),
+    ThroughModel(users_id=users[1].pk, sample_id=sample_object.pk)
+])
+```
