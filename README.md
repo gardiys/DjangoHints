@@ -3,13 +3,13 @@
 
 ## Оглавление
 1. [Dev-ops]
-    + [Nginx](nginx.md)
-    + [Docker](docker.md)
-    + [Ubuntu](ubuntu.md)
-    + [Gunicorn](gunicorn.md)
+ + [Nginx](nginx.md)
+ + [Docker](docker.md)
+ + [Ubuntu](ubuntu.md)
+ + [Gunicorn](gunicorn.md)
   
 2. [Django]
-    + [Чаты](chats.md)
+ + [Чаты](chats.md)
 3. [Django REST Framework]
 # Полезные ссылки для работы
 ## Сигналы
