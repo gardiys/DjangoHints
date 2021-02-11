@@ -10,6 +10,10 @@
   
 2. [Django]
  + [Чаты](chats.md)
+
+3. [Databases]
+ + [PostgreSQL](postgresql.md)
+
 3. [Django REST Framework]
 # Полезные ссылки для работы
 ## Сигналы
@@ -42,22 +46,6 @@ docker-compose pull
 ```bash
 image: sixhands/<название проекта>
 ```
-
-## PostgreSQL
-+ Запустить сервер для пользователя MacOS
-
-```
-pg_ctl -D /usr/local/var/postgres start
-```
-+ Перезапустить сервер macOs
-```
-brew services restart postgres
-```
-+ Удалить каскадно
-```
-TRUNCATE some_table CASCADE;
-```
-Адрес management tools http://127.0.0.1:51774/browser/
 
 ## Сообщения и чатики
 + [WebSocket](https://prognote.ru/web-dev/beck-end/how-to-make-a-chat-in-python-django/)
