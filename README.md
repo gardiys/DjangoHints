@@ -3,10 +3,10 @@
 
 ## Оглавление
 1. [Dev-ops]
-   + [Nginx](nginx.md)
-   + [Docker](docker.md)
-   + [Ubuntu](ubuntu.md)
-   + [Gunicorn](gunicorn.md)
+    + [Nginx](nginx.md)
+    + [Docker](docker.md)
+    + [Ubuntu](ubuntu.md)
+    + [Gunicorn](gunicorn.md)
   
 2. [Django]
     + [Чаты](chats.md)
