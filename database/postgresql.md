@@ -15,3 +15,5 @@ brew services restart postgres
 TRUNCATE some_table CASCADE;
 ```
 Адрес management tools http://127.0.0.1:51774/browser/
+
++ [Грейдим БД](https://ruhighload.com/Тюнинг+базы+postgres)
