@@ -130,3 +130,4 @@ ThroughModel.objects.bulk_create([
 ```
 
 [Полезные советы по работе с БД](https://webdevblog.ru/9-django-sovetov-dlya-raboty-s-bazami-dannyh/)
+[Убираем даунский count в пагинаторе](https://hakibenita.com/optimizing-the-django-admin-paginator)
