@@ -10,7 +10,7 @@
     4. [Gunicorn](./devops/gunicorn.md)
   
 2. **[Django]**
-    1. [DRF](./django/drf/drf.md)
+    1. [DRF](./django/drf.md)
     2. [Чаты](./django/chats.md)
     3. [SortMePlease](./django/hints.md)
     
