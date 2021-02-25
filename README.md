@@ -12,7 +12,8 @@
 2. **[Django]**
     1. [DRF]()
     2. [Чаты](./django/chats.md)
-    3. [SortMePlease](./django/hints.md)
+    3. [Вывод в разных форматах](./django/responses.md)
+    4. [SortMePlease](./django/hints.md)
     
 3. **[Databases]**
     1. [PostgreSQL](./database/postgresql.md)
