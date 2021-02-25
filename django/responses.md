@@ -3,6 +3,9 @@
 pip install XlsxWriter
 ```
 ```python
+import io
+import xlsxwriter
+
 @action(methods=["GET"], detail=True, url_path="products/get_xlsx")
     def get_xlsx(self, request, pk, *args, **kwargs):
         qs = self.get_object().products.all()
@@ -30,4 +33,22 @@ pip install XlsxWriter
         response['Content-Disposition'] = 'attachment; filename=%s' % filename
 
         return response
+```
+## Вывод файла в формате CSV
+
+```python
+import csv
+
+@action(methods=["GET"], detail=True, url_path="products/get_csv")
+def get_csv(self, request, pk, *args, **kwargs):
+    qs = self.get_object().products.all()
+    ser = serializers.ProductsStatisticsSerializer(qs, many=True)
+    response = HttpResponse(content_type="text/csv")
+    response['Content-Disposition'] = 'attachment; filename="products.csv"'
+    writer = csv.writer(response)
+    writer.writerow(ser.data[0].keys())
+    for line in ser.data:
+        data = line.values()
+        writer.writerow(data)
+    return response
 ```
