@@ -14,3 +14,7 @@ python manage.py shell -c "exec(open(r'/var/www/analytics_marketplace/parser/ite
 ```bash
 grep CRON /var/log/syslog
 ```
+### Изменить файл crontab
+```bash
+EDITOR=nano crontab -e
+```
