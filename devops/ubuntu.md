@@ -10,3 +10,7 @@
 ```bash
 python manage.py shell -c "exec(open(r'/var/www/analytics_marketplace/parser/items_update_adapter.py').read(), {})" &
 ```
+### Посмотреть логи crontab
+```bash
+grep CRON /var/log/syslog
+```
