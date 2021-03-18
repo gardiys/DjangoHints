@@ -27,3 +27,8 @@ TRUNCATE some_table CASCADE;
 Адрес management tools http://127.0.0.1:51774/browser/
 
 + [Грейдим БД](https://ruhighload.com/Тюнинг+базы+postgres)
++ Подключиться к postgres-docker
+```
+docker exec -it dd4a9e6684d1 sh
+psql -U sixhands
+```
