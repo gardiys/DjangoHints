@@ -1,7 +1,5 @@
-# Чаты на Django
-+ [Оглавление](../README.md)
-
 # Полезные ссылки для работы
++ [Оглавление](../README.md)
 ## Сигналы
 + [Django Signals](https://simpleisbetterthancomplex.com/tutorial/2016/07/28/how-to-create-django-signals.html)
 ## Dev-ops
@@ -11,9 +9,7 @@
 + [Как установить и использовать Docker в Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/docker-ubuntu-18-04-1-ru)
 + [Как использовать Django, PostgreSQL и Docker](https://webdevblog.ru/kak-ispolzovat-django-postgresql-i-docker/)
 + [Supervisor](https://ruhighload.com/Запуск+процессов+в+supervisor)
-```bash
-journalctl -u mysql.service -f
-```
+
 ## Django-telegram
 + [Bots](https://qna.habr.com/q/736377)
 + [Репозиторий с готовым ботом](https://github.com/adilkhash/planetpython_telegrambot)
@@ -36,25 +32,9 @@ image: sixhands/<название проекта>
 ## Сообщения и чатики
 + [WebSocket](https://prognote.ru/web-dev/beck-end/how-to-make-a-chat-in-python-django/)
 
-## Virtualenv
-+ Создать виртуальное окружение
-
-```
-python3 -m venv venv
-```
-
-+ Запустить виртуальное окружение
-
-```
-source venv/bin/activate
-```
 # Алгоритмы
 + [30 наиболее полезных алгосов и структур данных](https://dev.to/iuliagroza/complete-introduction-to-the-30-most-essential-data-structures-algorithms-43kd)
 
-Запустить скрипт в shell
-```python
-./manage.py shell < myscript.py
-```
 > Можно сюда добавить картиночки
 # Ссылки по Django
 + [Djoser](https://djoser.readthedocs.io/en/latest/introduction.html)

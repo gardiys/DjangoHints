@@ -7,10 +7,11 @@
 ---
 
 1. Dev-ops
-    + [Nginx](./devops/nginx.md)
-    + [Docker](./devops/docker.md)
-    + [Ubuntu](./devops/ubuntu.md)
-    + [Gunicorn](./devops/gunicorn.md)
+   + [Команды терминала](./devops/bash.md)
+   + [Nginx](./devops/nginx.md)
+   + [Docker](./devops/docker.md)
+   + [Ubuntu](./devops/ubuntu.md)
+   + [Gunicorn](./devops/gunicorn.md)
   
 2. Django
     + [Стартуем новый проект](./django/start_project.md)
