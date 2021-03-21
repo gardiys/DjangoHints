@@ -51,51 +51,6 @@ source venv/bin/activate
 # Алгоритмы
 + [30 наиболее полезных алгосов и структур данных](https://dev.to/iuliagroza/complete-introduction-to-the-30-most-essential-data-structures-algorithms-43kd)
 
-# Старт проекта на Django
-```bash
-pip install django djangorestframework psycopg2-binary djangorestframework-simplejwt django-cors-headers
-django-admin.py startproject <name>
-python manage.py startapp api
-```
-Добавить файл [.gitignore](https://gist.github.com/santoshpurbey/6f982faf1eacdac153ffd86a3a694239)
-```python
-INSTALLED_APPS = [
-    ...
-    'corsheaders',
-    'rest_framework',
-    'api',
-]
-```
-Изменить конфигурацию 
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '<db_name>',
-        'USER': '<db_user>',
-        'PASSWORD': '<user_password>',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
-}
-```
-```python
-MIDDLEWARE = [
-    ...
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    ...
-]
-```
-```python
-STATIC_ROOT = Path(BASE_DIR, 'static')
-CORS_ORIGIN_ALLOW_ALL = True # If this is used then `CORS_ORIGIN_WHITELIST` will not have any effect
-CORS_ALLOW_CREDENTIALS = True
-```
-Накатить миграции
-```python
-python manage.py migrate
-```
 Запустить скрипт в shell
 ```python
 ./manage.py shell < myscript.py

@@ -1,3 +1,7 @@
+# Отдаем файлы в разных форматах
+
++ [Оглавление](../README.md)
+
 ## Вывод файла в формате Excel
 ```bash
 pip install XlsxWriter
