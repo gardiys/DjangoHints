@@ -16,6 +16,7 @@ source venv/bin/activate
 ### Стартуем проект
 ```bash
 pip install django djangorestframework psycopg2-binary djangorestframework-simplejwt django-cors-headers
+pip freeze > requirements.txt
 django-admin.py startproject <name>
 python manage.py startapp api
 ```

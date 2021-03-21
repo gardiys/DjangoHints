@@ -3,7 +3,11 @@
 > Используй на свой страх и риск :)
 + [Оглавление](../README.md)
 ### Создаем файлик `authentication.py` в папке настроект проекта (там же где `settings.py`)
-> Я использую либу django-simplejwt для переопределения, так что нужно ее установить
+> Я использую либу djangorestframework-simplejwt для переопределения, так что нужно ее установить
+```
+pip install djangorestframework-simplejwt requests
+pip freeze > requirements.txt
+```
 ```python
 from rest_framework_simplejwt import authentication, exceptions
 from django.conf import settings
