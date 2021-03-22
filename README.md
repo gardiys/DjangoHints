@@ -21,7 +21,7 @@
 + [Стартуем новый проект](./django/start_project.md)
 + [Делаем чат](./django/chats.md)
 + [Response в нестандартном формате](./django/responses.md)
-+ [Микросервисная аутентификация](./django/microservice-auth.md)
++ [Микросервисная аутентификация (Не OAuth)](./django/microservice-auth.md)
 + [SortMePlease](./django/hints.md)
 
 ### <a name="databases">Базы данных</a>
