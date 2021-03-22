@@ -4,6 +4,7 @@
 2. [journalctl](#journalctl)
 3. [Crontab](#crontab)
 4. [7z](#7z)
+5. [env](#env)
 
 ## <a name="base">Базовые команды</a>
 
@@ -29,6 +30,13 @@ EDITOR=nano crontab -e
 ### Распаковать 7z
 ```bash
 7z x PACKAGE.7z 
+```
+## <a name="env">Env</a>
+### Загрузить из файла .env все переменные
+```bash
+set -a # automatically export all variables
+source .env
+set +a
 ```
 ### Запустить скрипт из джанги в фоне
 ```bash
