@@ -64,7 +64,13 @@ CORS_ALLOW_CREDENTIALS = True
 ```python
 STATIC_ROOT = Path(BASE_DIR, 'static')
 ```
-### 10 Добавляем .env файлик или описываем в environment в docker-compose
+### 10 Настраиваем среду для Django
+#### [Настраиваем Docker] или [Настраиваем димончиков]
+#### Настраиваем БД
++ [Настраиваем PostgreSQL]
++ [Настраиваем MySQL]
+
+### 11 Добавляем .env файлик или описываем в environment в docker-compose
 ```
 SECRET_KEY=<secret_key>
 DEBUG=0
@@ -75,7 +81,7 @@ SQL_PASSWORD=<db_password>
 SQL_HOST=<db_host>
 SQL_PORT=5432
 ```
-### 11 Накатываем миграции
+### 12 Накатываем миграции
 ```python
 python manage.py migrate
 ```
