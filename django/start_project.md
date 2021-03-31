@@ -2,26 +2,26 @@
 
 + [Оглавление](../README.md)
 
-### Создать виртуальное окружение
+### 1 Создать виртуальное окружение
 
 ```
 python3 -m venv venv
 ```
 
-### Запустить виртуальное окружение
+### 2 Запустить виртуальное окружение
 
 ```
 source venv/bin/activate
 ```
-### Стартуем проект
+### 3 Стартуем проект
 ```bash
 pip install django djangorestframework psycopg2-binary djangorestframework-simplejwt django-cors-headers
 pip freeze > requirements.txt
 django-admin.py startproject <name>
 python manage.py startapp api
 ```
-### Добавить файл [.gitignore](gitignore.md)
-### Изменить INSTALLED_APPS
+### 4 Добавить файл [.gitignore](gitignore.md)
+### 5 Изменить INSTALLED_APPS
 ```python
 INSTALLED_APPS = [
     ...
@@ -31,7 +31,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Изменить конфигурацию БД
+### 6 Изменить конфигурацию БД
 
 ```python
 DATABASES = {
@@ -47,7 +47,7 @@ DATABASES = {
 ```
 ### (Дополнительно) Можно включить постоянные соединения
 
-### Добавляем Middleware для CORS
+### 7 Добавляем Middleware для CORS
 ```python
 MIDDLEWARE = [
     ...
@@ -55,16 +55,16 @@ MIDDLEWARE = [
     ...
 ]
 ```
-### Разрешаем подключение
+### 8 Разрешаем подключение
 ```python
 CORS_ORIGIN_ALLOW_ALL = True # If this is used then `CORS_ORIGIN_WHITELIST` will not have any effect
 CORS_ALLOW_CREDENTIALS = True
 ```
-### Добавляем ссылочку на статику
+### 9 Добавляем ссылочку на статику
 ```python
 STATIC_ROOT = Path(BASE_DIR, 'static')
 ```
-### Добавляем .env файлик или описываем в environment в docker-compose
+### 10 Добавляем .env файлик или описываем в environment в docker-compose
 ```
 SECRET_KEY=<secret_key>
 DEBUG=0
@@ -75,7 +75,7 @@ SQL_PASSWORD=<db_password>
 SQL_HOST=<db_host>
 SQL_PORT=5432
 ```
-### Накатываем миграции
+### 11 Накатываем миграции
 ```python
 python manage.py migrate
 ```
