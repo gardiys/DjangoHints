@@ -65,7 +65,7 @@ CORS_ALLOW_CREDENTIALS = True
 STATIC_ROOT = Path(BASE_DIR, 'static')
 ```
 ### 10 Настраиваем среду для Django
-#### [Настраиваем Docker] или [Настраиваем димончиков]
+#### [Настраиваем Docker](../devops/django-docker.md) или [Настраиваем димончиков]
 #### Настраиваем БД
 + [Настраиваем PostgreSQL]
 + [Настраиваем MySQL]
