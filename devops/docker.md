@@ -4,7 +4,7 @@
 + Зайти внутрь контейнера
 
 ```
-sudo docker exec -ti <container_id> sh
+sudo docker exec -it <container_id> sh
 ```
 
 ## Linux Bash
