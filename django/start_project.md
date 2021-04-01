@@ -67,7 +67,7 @@ STATIC_ROOT = Path(BASE_DIR, 'static')
 ### 10 Настраиваем среду для Django
 #### [Настраиваем Docker](../devops/django-docker.md) или [Настраиваем димончиков]
 #### Настраиваем БД
-+ [Настраиваем PostgreSQL]
++ [Настраиваем PostgreSQL](../database/start_postgres.md)
 + [Настраиваем MySQL]
 
 ### 11 Добавляем .env файлик или описываем в environment в docker-compose
