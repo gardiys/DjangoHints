@@ -24,7 +24,7 @@ CREATE DATABASE <myproject>;
 CREATE USER gardiys WITH PASSWORD 'password';
 ALTER ROLE gardiys SET client_encoding TO 'utf8';
 ALTER ROLE gardiys SET default_transaction_isolation TO 'read committed';
-ALTER ROLE myprojectuser SET timezone TO 'UTC';
+ALTER ROLE gardiys SET timezone TO 'UTC';
 GRANT ALL PRIVILEGES ON DATABASE <myproject> TO gardiys;
 ```
 
