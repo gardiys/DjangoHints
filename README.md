@@ -23,6 +23,7 @@
 + [Response в нестандартном формате](./django/responses.md)
 + [Микросервисная аутентификация (Не OAuth)](./django/microservice-auth.md)
 + [SortMePlease](./django/hints.md)
++ [Cсылки](.django/links.md)
 
 ### <a name="databases">Базы данных</a>
 #### <a name="postgresql">PostgreSQL</a>
