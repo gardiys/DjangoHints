@@ -15,7 +15,7 @@
 + [Docker](./devops/docker.md)
 + [Ubuntu](./devops/ubuntu.md)
 + [Gunicorn](./devops/gunicorn.md)
-+ [Ссылки](./devops/links)
++ [Ссылки](./devops/links.md)
   
 ### <a name="django">Django</a>
 + [Стартуем новый проект](./django/start_project.md)
