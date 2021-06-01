@@ -58,12 +58,12 @@ ThroughModel.objects.bulk_create([
 ])
 ```
 
-[Полезные советы по работе с БД](https://webdevblog.ru/9-django-sovetov-dlya-raboty-s-bazami-dannyh/)
-[Убираем даунский count в пагинаторе](https://hakibenita.com/optimizing-the-django-admin-paginator)
-
-https://docs.celeryproject.org/en/stable/django/first-steps-with-django.html
-https://docs.celeryproject.org/en/stable/userguide/daemonizing.html#generic-initd-celerybeat-django-example
-https://docs.celeryproject.org/en/stable/reference/celery.schedules.html
-https://docs.celeryproject.org/en/v2.3.3/userguide/periodic-tasks.html#starting-celerybeat
-https://overcoder.net/q/465026/как-настроить-celerybeatschedule-в-настройках-django
-https://linuxrussia.com/systemd-create-own-unit.html
+# Другое
++ [Полезные советы по работе с БД](https://webdevblog.ru/9-django-sovetov-dlya-raboty-s-bazami-dannyh/)
++ [Убираем даунский count в пагинаторе](https://hakibenita.com/optimizing-the-django-admin-paginator)
++ [Первые шаги в Django](https://docs.celeryproject.org/en/stable/django/first-steps-with-django.html)
++ [Periodic Task в CeleryBeat](https://docs.celeryproject.org/en/stable/userguide/periodic-tasks.html#starting-celerybeat)
++ [Celery - развёртка не в Docker](https://docs.celeryproject.org/en/stable/userguide/daemonizing.html#generic-initd-celerybeat-django-example)
++ [Celery как работает schedule](https://docs.celeryproject.org/en/stable/reference/celery.schedules.html)
++ [Как настроить CeleryBeat](https://overcoder.net/q/465026/как-настроить-celerybeatschedule-в-настройках-django)
++ [Systemd - как собрать свой сервис](https://linuxrussia.com/systemd-create-own-unit.html)
