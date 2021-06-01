@@ -26,6 +26,7 @@ image: sixhands/<название проекта>
 
 # Алгоритмы
 + [30 наиболее полезных алгосов и структур данных](https://dev.to/iuliagroza/complete-introduction-to-the-30-most-essential-data-structures-algorithms-43kd)
++ [20 проблем которые решают алгоритмы](https://dev.to/codinglanguages/how-to-learn-not-memorize-any-algorithm-or-data-structure-analysis-of-20-problem-solving-techniques-you-must-know-d7)
 
 > Можно сюда добавить картиночки
 # Ссылки по Django
