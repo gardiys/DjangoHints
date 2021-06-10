@@ -86,4 +86,7 @@ SQL_PORT=5432
 python manage.py migrate
 ```
 
-
+## Что дальше?
++ [Авторизация, регистрация и аутентификация](authorization.md)
++ 
++
