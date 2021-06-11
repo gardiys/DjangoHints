@@ -2,26 +2,36 @@
 
 + [Оглавление](../README.md)
 
-### 1 Создать виртуальное окружение
+### Создать виртуальное окружение
 
 ```
 python3 -m venv venv
 ```
 
-### 2 Запустить виртуальное окружение
+### Запустить виртуальное окружение
 
 ```
 source venv/bin/activate
 ```
-### 3 Стартуем проект
+### Стартуем проект
 ```bash
 pip install django djangorestframework psycopg2-binary djangorestframework-simplejwt django-cors-headers
 pip freeze > requirements.txt
 django-admin.py startproject <name>
 python manage.py startapp api
 ```
-### 4 Добавить файл [.gitignore](gitignore.md)
-### 5 Изменить INSTALLED_APPS
+
+### Добавить файл [.gitignore](gitignore.md)
+
+### Скрываем переменные для `.env`
+```python
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = str(env("SECRET_KEY")) or get_random_secret_key()
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = int(env("DEBUG"))
+```
+### Изменить INSTALLED_APPS
 ```python
 INSTALLED_APPS = [
     ...
@@ -31,7 +41,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### 6 Изменить конфигурацию БД
+### Изменить конфигурацию БД
 
 ```python
 DATABASES = {
@@ -47,7 +57,7 @@ DATABASES = {
 ```
 ### (Дополнительно) Можно включить постоянные соединения
 
-### 7 Добавляем Middleware для CORS
+### Добавляем Middleware для CORS
 ```python
 MIDDLEWARE = [
     ...
@@ -55,22 +65,22 @@ MIDDLEWARE = [
     ...
 ]
 ```
-### 8 Разрешаем подключение
+### Разрешаем подключение
 ```python
 CORS_ORIGIN_ALLOW_ALL = True # If this is used then `CORS_ORIGIN_WHITELIST` will not have any effect
 CORS_ALLOW_CREDENTIALS = True
 ```
-### 9 Добавляем ссылочку на статику
+### Добавляем ссылочку на статику
 ```python
 STATIC_ROOT = Path(BASE_DIR, 'static')
 ```
-### 10 Настраиваем среду для Django
+### Настраиваем среду для Django
 #### [Настраиваем Docker](../devops/django-docker.md) или [Настраиваем димончиков]
 #### Настраиваем БД
 + [Настраиваем PostgreSQL](../database/start_postgres.md)
 + [Настраиваем MySQL]
 
-### 11 Добавляем .env файлик или описываем в environment в docker-compose
+### Добавляем .env файлик или описываем в environment в docker-compose
 ```
 SECRET_KEY=<secret_key>
 DEBUG=0
