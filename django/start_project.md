@@ -4,21 +4,21 @@
 
 ### Создать виртуальное окружение
 
-```
-python3 -m venv venv
+```shell
+$ python3 -m venv venv
 ```
 
 ### Запустить виртуальное окружение
 
-```
-source venv/bin/activate
+```shell
+$ source venv/bin/activate
 ```
 ### Стартуем проект
-```bash
-pip install django djangorestframework psycopg2-binary djangorestframework-simplejwt django-cors-headers
-pip freeze > requirements.txt
-django-admin.py startproject <name>
-python manage.py startapp api
+```shell
+$ pip install django djangorestframework psycopg2-binary djangorestframework-simplejwt django-cors-headers
+$ pip freeze > requirements.txt
+$ django-admin.py startproject <name>
+$ python manage.py startapp api
 ```
 
 ### Добавить файл [.gitignore](gitignore.md)
@@ -81,7 +81,7 @@ STATIC_ROOT = Path(BASE_DIR, 'static')
 + [Настраиваем MySQL]
 
 ### Добавляем .env файлик или описываем в environment в docker-compose
-```
+```dotenv
 SECRET_KEY=<secret_key>
 DEBUG=0
 DJANGO_ALLOWED_HOSTS=*
@@ -92,8 +92,8 @@ SQL_HOST=<db_host>
 SQL_PORT=5432
 ```
 ### 12 Накатываем миграции
-```python
-python manage.py migrate
+```shell
+$ python manage.py migrate
 ```
 
 ## Что дальше?
