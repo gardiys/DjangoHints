@@ -25,11 +25,15 @@ $ python manage.py startapp api
 
 ### Скрываем переменные для `.env`
 ```python
+import os
+
+from django.core.management.utils import get_random_secret_key
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = str(env("SECRET_KEY")) or get_random_secret_key()
+SECRET_KEY = os.environ.get("SECRET_KEY") or get_random_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = int(env("DEBUG"))
+DEBUG = int(os.environ.get('DEBUG'))
 ```
 ### Изменить INSTALLED_APPS
 ```python
